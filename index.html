@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="./style.css">
     <link href="./src/output.css" rel="stylesheet">
 </head>
-<body class="bg-indigo-100">
-    <nav class="navbar bg-gray-300 flex justify-between items-center">
+<body class="bg-indigo-100 dark:bg-gray-900">
+    <nav class="navbar bg-gray-300 dark:bg-gray-600 flex justify-between items-center">
         <div class="logo">
             <figure>
                 <img src="./assets/portfolio-logo-dark.png" class="w-48 h-24" alt="portfolio flame logo">
@@ -22,63 +22,131 @@
                 <div class="moon">
                 </div>
             </div>
-            <h1 class="font-extrabold text-4xl text-purple-800">MOTLALEPULA SELLO</h1>
+            <h1 class="name font-extrabold text-4xl dark:text-purple-500 text-purple-800">MOTLALEPULA SELLO</h1>
         </article>
         <ul class="flex gap-4 items-center p-4 text-4xl">
-            <li><a href=""><span class="icon text-blue-600"><i class="fa-brands fa-linkedin animate-bounce"></i></span></a></li>
-            <li><a href=""><span class="icon text-purple-600"><i class="fa-brands fa-github animate-bounce"></i></span></a></li>
-            <li><a href=""><span class="icon text-blue-400"><i class="fa-brands fa-square-twitter animate-bounce"></i></span></a></li>
-            <li><a href=""><img src="./icon.svg" class="animate-bounce h-6 w-6" alt="frontendmentor svg"></a></li>
+            <li><a href=""><span class="icon dark:text-blue-500 text-blue-600"><i class="fa-brands fa-linkedin"></i></span></a></li>
+            <li><a href=""><span class="icon dark:text-purple-500 text-purple-600"><i class="fa-brands fa-github"></i></span></a></li>
+            <li><a href=""><span class="icon text-blue-400"><i class="fa-brands fa-square-twitter"></i></span></a></li>
+            <li><a href=""><span class="icon"><img src="./icon.svg" class="h-6 w-6" alt="frontendmentor svg"></span></a></li>
         </ul>
     </nav>
     <header class="flex justify-between items-center">
-        <article class="text-purple-900 p-4">
+        <article class="text-purple-900 dark:text-purple-600 p-4">
             <h1 class="font-bold text-4xl mb-6">Welcome to my website! I'm <span class="name border-b-4 border-b-teal-400">Motlalepula Sello</span></h1>
             <p class="mb-6">Based in South Africa, I'm a front-end developer with a flair for creativity, a passion for learning new tools, technologies, and languages, and a love for building user-friendly websites, web apps, and web components that people enjoy interacting with.</p>
             <button class="p-2 border border-transparent hover:border-purple-400 font-semibold text-pink-100 hover:text-purple-800 hover:bg-pink-100 bg-purple-800 rounded-md"><a href="#">Have a look around</a></button>
         </article>
-        <figure>
-            <img src="./assets/Motlakz.jpg" alt="My pic">
+        <figure class="p-4">
+            <img src="./assets/Motlakz.jpg" class="border-8 border-purple-600 object-cover rounded-lg" alt="My pic">
         </figure>
     </header>
-    <section class="languages grid grid-cols-4 p-8 grid-rows-2 text-center mt-16">
-        <div>
-            <h2 class="font-bold text-4xl text-orange-500">HTML <i class="fa-brands fa-html5"></i></h2>
-            <p class="font-semibold text-blue-400">3 Years</p>
-        </div>
-        <div>
-            <h2 class="font-bold text-4xl text-blue-500">CSS <i class="fa-brands fa-css3-alt"></i></h2>
-            <p class="font-semibold text-blue-400">3 Years</p>
-        </div>
-        <div>
-            <h2 class="font-bold text-4xl text-pink-500">SCSS <i class="fa-brands fa-sass"></i></h2>
-            <p class="font-semibold text-blue-400">1 Year</p>
-        </div>
-        <div>
-            <h2 class="font-bold text-4xl text-teal-400">TailwindCSS <i class="bi bi-braces-asterisk"></i></h2>
-            <p class="font-semibold text-blue-400">1 Year</p>
-        </div>
-        <div>
-            <h2 class="font-bold text-4xl text-yellow-500">JavaScript <i class="fa-brands fa-node-js"></i></h2>
-            <p class="font-semibold text-blue-400">3 Years</p>
-        </div>
-        <div>
-            <h2 class="font-bold text-4xl flex text-red-600">Ruby on Rails
-                <img src="./assets/ruby-removebg-preview.png" class="h-10 w-10" alt="">
-            </h2>
-            <p class="font-semibold text-blue-400">1 Year</p>
-        </div>
-        <div>
-            <h2 class="font-bold text-4xl text-cyan-500">React <i class="fa-brands fa-react"></i></h2>
-            <p class="font-semibold text-blue-400">1 Year</p>
-        </div>
-        <div>
-            <h2 class="font-bold text-4xl text-purple-500">Front End Development <i class="fa-solid fa-laptop-code"></i></h2>
-            <p class="font-semibold text-blue-400">3 Years</p>
+    <section class="languages mt-16">
+        <h2 class="font-extrabold text-4xl text-center text-purple-800 mb-6">My Tech Stack:</h2>
+        <div class="lang-specs grid grid-cols-4 p-8 grid-rows-2 text-center ">
+            <div>
+                <h2 class="font-bold text-4xl text-orange-500">HTML <i class="fa-brands fa-html5"></i></h2>
+                <p class="font-semibold text-blue-400">3 Years</p>
+            </div>
+            <div>
+                <h2 class="font-bold text-4xl text-blue-500">CSS <i class="fa-brands fa-css3-alt"></i></h2>
+                <p class="font-semibold text-blue-400">3 Years</p>
+            </div>
+            <div>
+                <h2 class="font-bold text-4xl text-pink-500">SCSS <i class="fa-brands fa-sass"></i></h2>
+                <p class="font-semibold text-blue-400">1 Year</p>
+            </div>
+            <div>
+                <h2 class="font-bold text-4xl text-teal-400">TailwindCSS <i class="bi bi-braces-asterisk"></i></h2>
+                <p class="font-semibold text-blue-400">1 Year</p>
+            </div>
+            <div>
+                <h2 class="font-bold text-4xl text-yellow-500">JavaScript <i class="fa-brands fa-node-js"></i></h2>
+                <p class="font-semibold text-blue-400">3 Years</p>
+            </div>
+            <div>
+                <h2 class="font-bold text-4xl flex text-red-600">Ruby on Rails
+                    <img src="./assets/ruby-icon.png" class="h-10 w-10" alt="">
+                </h2>
+                <p class="font-semibold text-blue-400">1 Year</p>
+            </div>
+            <div>
+                <h2 class="font-bold text-4xl text-cyan-500">React <i class="fa-brands fa-react"></i></h2>
+                <p class="font-semibold text-blue-400">1 Year</p>
+            </div>
+            <div>
+                <h2 class="font-bold text-4xl text-purple-500">Front End Development <i class="fa-solid fa-laptop-code"></i></h2>
+                <p class="font-semibold text-blue-400">3 Years</p>
+            </div>
         </div>
     </section>
     <section class="projects">
-
+        <div class="project-header flex items-center justify-between dark:text-purple-500 text-purple-800 py-10 px-8 mt-16">
+            <h2 class="font-extrabold text-4xl">Projects</h2>
+            <button class="contact text-2xl p-2 border border-transparent hover:border-purple-400 font-semibold text-pink-100 hover:text-purple-800 hover:bg-pink-100 bg-purple-800 rounded-md"><a href="">Contact Me</a></button>
+        </div>
+        <div class="cards grid grid-cols-3 gap-6 p-8">
+            <div class="card border border-gray-300 slit-n-vr">
+                <figure>
+                    <img src="" class="rounded-lg" alt="first">
+                    <figcaption>Some Figcaption for inspiration</figcaption>
+                </figure>
+                <article class="p-8">
+                    <h2>This project</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, inventore.</p>
+                </article>
+            </div>
+            <div class="card border border-gray-300 slit-in-vr">
+                <figure>
+                    <img src="" class="rounded-lg" alt="second">
+                    <figcaption>Some Figcaption for inspiration</figcaption>
+                </figure>
+                <article class="p-8">
+                    <h2>That Project</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </article>
+            </div>
+            <div class="card border border-gray-300 slit-in-vr">
+                <figure>
+                    <img src="" class="rounded-lg" alt="third">
+                    <figcaption>Some Figcaption for inspiration</figcaption>
+                </figure>
+                <article class="p-8">
+                    <h2>A Project</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, dolores.</p>
+                </article>
+            </div>
+            <div class="card border border-gray-300 slit-in-vr">
+                <figure>
+                    <img src="" class="rounded-lg" alt="fourth">
+                    <figcaption>Some Figcaption for inspiration</figcaption>
+                </figure>
+                <article class="p-8">
+                    <h2>Those Projects</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam minima molestiae laborum nemo pariatur quas.</p>
+                </article>
+            </div>
+            <div class="card border border-gray-300 slit-in-vr">
+                <figure>
+                    <img src="" class="rounded-lg" alt="fifth">
+                    <figcaption>Some Figcaption for inspiration</figcaption>
+                </figure>
+                <article class="p-8">
+                    <h2>These Projects</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, cum!</p>
+                </article>
+            </div>
+            <div class="card border border-gray-300 slit-in-vr">
+                <figure>
+                    <img src="" class="rounded-lg" alt="sixth">
+                    <figcaption>Some Figcaption for inspiration</figcaption>
+                </figure>
+                <article class="p-8">
+                    <h2>The Other Project</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad molestiae optio veniam!</p>
+                </article>
+            </div>
+        </div>
     </section>
     <script src="./index.js"></script>
 </body>

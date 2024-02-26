@@ -72,7 +72,7 @@ button a {
     --light-purple: rgb(243 232 255);
     --lightgray: #d7d7d7;
 }
-
+  
 body.dark {
     background-color: rgb(17 24 39);
 }
@@ -178,6 +178,63 @@ li:hover {
 
 .slit-in-vr {
     animation: .5s slit-in-vertical ease forwards;
+}
+
+.animate-spin-slow {
+    animation: spin-slow 5s linear infinite !important;
+}
+
+.zoom-element {
+    animation: zoomEffect 2s ease-in-out infinite;
+    display: inline-block;
+}
+
+.shine-element {
+    position: relative;
+    overflow: hidden;
+}
+  
+.shine-element::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, transparent 50%, rgba(255, 255, 255, 0.8) 50%, transparent 100%);
+    background-size: 200% 100%;
+    animation: shine 4s linear infinite; /* Adjust the duration (4s) for the speed of the glimmer */
+}
+
+@keyframes shine {
+    0%, 100% {
+      background-position: -100% 0;
+    }
+
+    50% {
+      background-position: 200% 0;
+    }
+}
+
+@keyframes zoomEffect {
+    0%, 100% {
+      transform: scale(0.9);
+    }
+
+    50% {
+      transform: scale(1.0);
+    }
+}
+  
+
+@keyframes spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
 }
 
 @keyframes slit-in-vertical {

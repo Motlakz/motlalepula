@@ -13,4 +13,10 @@ modeButton.addEventListener('click', function () {
     body.classList.toggle('dark');
     moonIcon.classList.toggle('sun');
     modeIcon.classList.toggle('day');
+
+    // Check if dark mode is enabled
+    const isDarkMode = body.classList.contains('dark');
+
+    // Change the logo based on the mode
+    logo.src = isDarkMode ? './assets/portfolio-logo.png' : './assets/portfolio-logo-dark.png';
 });

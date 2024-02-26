@@ -14,36 +14,37 @@
     <nav class="navbar bg-gray-300 dark:bg-gray-600 flex justify-between items-center">
         <div class="logo">
             <figure>
-                <img src="./assets/portfolio-logo-dark.png" class="w-48 h-24" alt="portfolio flame logo">
+                <img id="logo" src="./assets/portfolio-logo-dark.png" class="w-48 h-24" alt="portfolio flame logo">
             </figure>
         </div>
+                      
         <article>
             <div class="mode">
                 <div class="moon">
                 </div>
             </div>
-            <h1 class="name font-extrabold text-4xl dark:text-purple-500 text-purple-800">MOTLALEPULA SELLO</h1>
+            <h1 class="name font-extrabold text-4xl dark:text-cyan-400 text-purple-700">MOTLALEPULA SELLO</h1>
         </article>
         <ul class="flex gap-4 items-center p-4 text-4xl">
-            <li><a href=""><span class="icon dark:text-blue-500 text-blue-600"><i class="fa-brands fa-linkedin"></i></span></a></li>
+            <li><a href=""><span class="icon dark:text-blue-400 text-blue-600"><i class="fa-brands fa-linkedin"></i></span></a></li>
             <li><a href=""><span class="icon dark:text-purple-500 text-purple-600"><i class="fa-brands fa-github"></i></span></a></li>
-            <li><a href=""><span class="icon text-blue-400"><i class="fa-brands fa-square-twitter"></i></span></a></li>
-            <li><a href=""><span class="icon"><img src="./icon.svg" class="h-6 w-6" alt="frontendmentor svg"></span></a></li>
+            <li><a href=""><span class="icon text-blue-400 dark:text-blue-300"><i class="fa-brands fa-square-twitter"></i></span></a></li>
+            <li><a href=""><span class="icon"><img src="./icon.svg" class="h-8 w-8 rounded bg-white dark:bg-slate-300" alt="frontendmentor svg"></span></a></li>
         </ul>
     </nav>
     <header class="flex justify-between items-center">
-        <article class="text-purple-900 dark:text-purple-600 p-4">
-            <h1 class="font-bold text-4xl mb-6">Welcome to my website! I'm <span class="name border-b-4 border-b-teal-400">Motlalepula Sello</span></h1>
+        <article class="text-purple-900 dark:text-cyan-500 p-4">
+            <h1 class="font-bold text-4xl mb-6">Welcome to my website! I'm <span class="name border-b-4 border-b-teal-400 dark:border-b-purple-400">Motlalepula Sello</span></h1>
             <p class="mb-6">Based in South Africa, I'm a front-end developer with a flair for creativity, a passion for learning new tools, technologies, and languages, and a love for building user-friendly websites, web apps, and web components that people enjoy interacting with.</p>
-            <button class="p-2 border border-transparent hover:border-purple-400 font-semibold text-pink-100 hover:text-purple-800 hover:bg-pink-100 bg-purple-800 rounded-md"><a href="#">Have a look around</a></button>
+            <button class="p-2 border border-transparent hover:border-purple-400 dark:hover:border-cyan-400 font-semibold text-pink-100 dark:text-cyan-100 hover:text-purple-800 dark:hover:text-cyan-800 hover:bg-pink-100 dark:hover:bg-teal-100 bg-purple-800 dark:bg-cyan-800 rounded-md"><a href="#">Have a look around</a></button>
         </article>
         <figure class="p-4">
-            <img src="./assets/Motlakz.jpg" class="border-8 border-purple-600 object-cover rounded-lg" alt="My pic">
+            <img src="./assets/Motlakz.jpg" class="border-8 border-purple-600 dark:border-cyan-500 object-cover rounded-lg" alt="My pic">
         </figure>
     </header>
     <section class="languages mt-16">
-        <h2 class="font-extrabold text-4xl text-center text-purple-800 mb-6">My Tech Stack:</h2>
-        <div class="lang-specs grid grid-cols-4 p-8 grid-rows-2 text-center ">
+        <h2 class="font-extrabold text-4xl text-center text-purple-800 dark:text-cyan-600 mb-6">My Tech Stack:</h2>
+        <div class="lang-specs grid grid-cols-4 p-8 grid-rows-2 text-center">
             <div>
                 <h2 class="font-bold text-4xl text-orange-500">HTML <i class="fa-brands fa-html5"></i></h2>
                 <p class="font-semibold text-blue-400">3 Years</p>
@@ -81,73 +82,146 @@
         </div>
     </section>
     <section class="projects">
-        <div class="project-header flex items-center justify-between dark:text-purple-500 text-purple-800 py-10 px-8 mt-16">
+        <div class="project-header flex items-center justify-between dark:text-cyan-500 text-purple-800 py-10 px-8 mt-16">
             <h2 class="font-extrabold text-4xl">Projects</h2>
-            <button class="contact text-2xl p-2 border border-transparent hover:border-purple-400 font-semibold text-pink-100 hover:text-purple-800 hover:bg-pink-100 bg-purple-800 rounded-md"><a href="">Contact Me</a></button>
+            <button class="contact text-2xl p-2 border border-transparent hover:border-purple-400 dark:hover:border-cyan-400 font-semibold text-pink-100 dark:text-teal-100 hover:text-purple-800 dark:hover:text-cyan-800 hover:bg-pink-100 dark:hover:bg-teal-100 bg-purple-800 dark:bg-cyan-800 rounded-md"><a href="">Contact Me</a></button>
         </div>
         <div class="cards grid grid-cols-3 gap-6 p-8">
-            <div class="card border border-gray-300 slit-n-vr">
+            <div class="card border border-gray-400 dark:border-gray-300 slit-n-vr">
                 <figure>
                     <img src="" class="rounded-lg" alt="first">
-                    <figcaption>Some Figcaption for inspiration</figcaption>
+                    <figcaption class="dark:bg-slate-700 dark:text-white">Some Figcaption for inspiration</figcaption>
                 </figure>
-                <article class="p-8">
+                <article class="p-8 dark:bg-slate-600 dark:text-white">
                     <h2>This project</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, inventore.</p>
                 </article>
             </div>
-            <div class="card border border-gray-300 slit-in-vr">
+            <div class="card border border-gray-400 dark:border-gray-300 slit-in-vr">
                 <figure>
                     <img src="" class="rounded-lg" alt="second">
-                    <figcaption>Some Figcaption for inspiration</figcaption>
+                    <figcaption class="dark:bg-slate-700 dark:text-white">Some Figcaption for inspiration</figcaption>
                 </figure>
-                <article class="p-8">
+                <article class="p-8 dark:bg-slate-600 dark:text-white">
                     <h2>That Project</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                 </article>
             </div>
-            <div class="card border border-gray-300 slit-in-vr">
+            <div class="card border border-gray-400 dark:border-gray-300 slit-in-vr">
                 <figure>
                     <img src="" class="rounded-lg" alt="third">
-                    <figcaption>Some Figcaption for inspiration</figcaption>
+                    <figcaption class="dark:bg-slate-700 dark:text-white">Some Figcaption for inspiration</figcaption>
                 </figure>
-                <article class="p-8">
+                <article class="p-8 dark:bg-slate-600 dark:text-white">
                     <h2>A Project</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, dolores.</p>
                 </article>
             </div>
-            <div class="card border border-gray-300 slit-in-vr">
+            <div class="card border border-gray-400 dark:border-gray-300 slit-in-vr">
                 <figure>
                     <img src="" class="rounded-lg" alt="fourth">
-                    <figcaption>Some Figcaption for inspiration</figcaption>
+                    <figcaption class="dark:bg-slate-700 dark:text-white">Some Figcaption for inspiration</figcaption>
                 </figure>
-                <article class="p-8">
+                <article class="p-8 dark:bg-slate-600 dark:text-white">
                     <h2>Those Projects</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam minima molestiae laborum nemo pariatur quas.</p>
                 </article>
             </div>
-            <div class="card border border-gray-300 slit-in-vr">
+            <div class="card border border-gray-400 dark:border-gray-300 slit-in-vr">
                 <figure>
                     <img src="" class="rounded-lg" alt="fifth">
-                    <figcaption>Some Figcaption for inspiration</figcaption>
+                    <figcaption class="dark:bg-slate-700 dark:text-white">Some Figcaption for inspiration</figcaption>
                 </figure>
-                <article class="p-8">
+                <article class="p-8 dark:bg-slate-600 dark:text-white">
                     <h2>These Projects</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, cum!</p>
                 </article>
             </div>
-            <div class="card border border-gray-300 slit-in-vr">
+            <div class="card border border-gray-400 dark:border-gray-300 slit-in-vr">
                 <figure>
                     <img src="" class="rounded-lg" alt="sixth">
-                    <figcaption>Some Figcaption for inspiration</figcaption>
+                    <figcaption class="dark:bg-slate-700 dark:text-white">Some Figcaption for inspiration</figcaption>
                 </figure>
-                <article class="p-8">
+                <article class="p-8 dark:bg-slate-600 dark:text-white">
                     <h2>The Other Project</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad molestiae optio veniam!</p>
                 </article>
             </div>
         </div>
     </section>
+    <section class="contact flex items-stretch p-16">
+        <div class="left flex-1 p-10">
+            <article class="dark:text-white">
+                <h2 class="font-bold text-4xl text-slate-800 dark:text-white mb-4">Talk to me</h2>
+                <p class="text-2xl">I'd love to hear about your problems. Not like a therapist, but so I can resolve them.</p>
+            </article>
+        </div>
+        <div class="right flex-1">
+            <div class="relative sm:max-w-xl sm:mx-auto">
+                <div class="relative p-8 dark:bg-slate-600 bg-white mx-8 md:mx-0 shadow rounded-3xl">
+                    <div class="max-w-md mx-auto">
+                        <header class="mb-6">
+                            <h2 class="text-2xl font-semibold dark:text-white text-gray-700">Contact Me</h2>
+                            <p class="text-sm dark:text-gray-200 text-gray-500 font-normal leading-relaxed">Connect with me on these platforms.</p>
+                        </header>
+                        <form action="#" method="POST" class="space-y-6">
+                            <div class="rounded-md shadow-sm space-y-4">
+                                <div>
+                                    <label for="subject" class="block text-sm font-medium text-gray-600 mb-1">Subject</label>
+                                    <input id="subject" name="subject" type="text" autocomplete="subject" required class="w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" placeholder="Enter the subject of your message">
+                                </div>
+                                <div>
+                                    <label for="message" class="block text-sm font-medium text-gray-600 mb-1">Message</label>
+                                    <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" placeholder="Your Message"></textarea>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full text-center px-4 py-2 rounded-md
+                                 text-sm font-medium text-white bg-teal-500 hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                        <div class="divide-y divide-gray-200 mt-4">
+                            <div class="py-4 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
+                                <div class="flex flex-col">
+                                    <label class="leading-loose dark:text-gray-200">LinkedIn</label>
+                                    <button type="button" onclick="window.open('https://www.linkedin.com/in/yourusername', '_blank')" class="px-4 py-2 mt-2 flex items-center justify-center text-white bg-blue-500 rounded-lg hover:bg-blue-600 sm:mt-0">
+                                        <i class="fab fa-linkedin mr-2"></i>
+                                        LinkedIn Profile
+                                    </button>
+                                </div>
+                                <div class="flex flex-col">
+                                    <label class="leading-loose dark:text-gray-200">Twitter</label>
+                                    <button type="button" onclick="window.open('https://twitter.com/yourusername', '_blank')" class="px-4 py-2 mt-2 flex items-center justify-center text-white bg-blue-400 rounded-lg hover:bg-blue-500 sm:mt-0">
+                                        <i class="fab fa-twitter mr-2"></i>
+                                        Twitter Profile
+                                    </button>
+                                </div>
+                                <div class="flex flex-col">
+                                    <label class="leading-loose dark:text-gray-200">GitHub</label>
+                                    <button type="button" onclick="window.open('https://github.com/yourusername', '_blank')" class="px-4 py-2 mt-2 flex items-center justify-center text-white bg-purple-400 rounded-lg hover:bg-purple-800 sm:mt-0">
+                                        <i class="fab fa-github mr-2"></i>
+                                        GitHub Profile
+                                    </button>
+                                </div>
+                                <div class="flex flex-col">
+                                    <label class="leading-loose dark:text-gray-200">Email</label>
+                                    <button type="button" onclick="window.location.href='mailto:your-email@example.com'" class="px-4 py-2 mt-2 flex items-center justify-center text-white bg-red-500 rounded-lg hover:bg-red-600 sm:mt-0">
+                                        <i class="fas fa-envelope mr-2"></i>
+                                        Send Email
+                                    </button>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        
+    </footer>
     <script src="./index.js"></script>
 </body>
 </html>

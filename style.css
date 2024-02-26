@@ -16,7 +16,11 @@ button a {
     border: 1px solid gray;
     border-radius: 30px;
     transition: all 500ms ease-in-out;
-    background: #d7d7d7;
+    background-color: #6c6c6c;
+}
+
+.dark .mode {
+    background-color: var(--light-purple);
 }
 
 .moon {
@@ -30,15 +34,15 @@ button a {
     width: 10em;
     height: 10em;
     box-shadow:
-        3em 2.5em 0 0em darkslategray inset,
+        3em 2.5em 0 0em rgb(115, 130, 146) inset,
         black 0em -7em 0 -4.5em,
         black 3em 7em 0 -4.5em,
         black 2em 13em 0 -4em,
         black 6em 2em 0 -4.1em,
-        gray 8em 8em 0 -4.5em,
-        gray 6em 13em 0 -4.5em,
-        gray -4em 7em 0 -4.5em,
-        gray -1em 10em 0 -4.5em;
+        slategray 8em 8em 0 -4.5em,
+        slategray 6em 13em 0 -4.5em,
+        slategray -4em 7em 0 -4.5em,
+        slategray -1em 10em 0 -4.5em;
 }
 
 .sun {
@@ -62,9 +66,11 @@ button a {
 
 :root {
     --deep-purple: purple;
+    --violet: blueviolet;
     --main-white: #fff;
     --main-black: #000;
-    --curve: 40;
+    --light-purple: rgb(243 232 255);
+    --lightgray: #d7d7d7;
 }
 
 body.dark {
@@ -72,7 +78,16 @@ body.dark {
 }
 
 nav .name {
-    text-shadow: 1px 1px 1px var(--main-black);
+    text-shadow: 3px 3px 3px var(--main-black);
+}
+
+.dark nav .name {
+    text-shadow: 3px 3px 3px #333;
+}
+
+nav .name,
+.dark nav .name {
+    letter-spacing: 5px;
 }
 
 header article {
@@ -134,7 +149,11 @@ li:hover {
 }
 
 .card:hover {
-    box-shadow: var(--deep-purple) 5px 5px, rgb(88 28 135) 10px 10px;
+    box-shadow: rgb(156, 99, 196) 5px 5px, var(--deep-purple) 10px 10px;
+}
+
+.dark .card:hover {
+    box-shadow: var(--violet) 5px 5px, rgb(156, 99, 196) 10px 10px;
 }
 
 .card:hover figure figcaption {

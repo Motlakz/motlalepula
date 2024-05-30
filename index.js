@@ -9,12 +9,10 @@ const isDarkMode = body.classList.contains('dark');
 
 // Set the initial icon based on the mode
 moonIcon.classList.toggle('sun', !isDarkMode);
-modeIcon.classList.toggle('day', !isDarkMode);
 
 modeButton.addEventListener('click', function () {
       body.classList.toggle('dark');
       moonIcon.classList.toggle('sun');
-      modeIcon.classList.toggle('day');
 
       // Check if dark mode is enabled
       const isDarkMode = body.classList.contains('dark');

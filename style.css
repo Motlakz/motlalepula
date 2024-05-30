@@ -180,6 +180,10 @@ li:hover {
     animation: .5s slit-in-vertical ease forwards;
 }
 
+.slit-in-hr {
+    animation: .5s slit-in-horizonal ease forwards;
+}
+
 .animate-spin-slow {
     animation: spin-slow 5s linear infinite !important;
 }
@@ -237,6 +241,23 @@ li:hover {
     }
 }
 
+@keyframes slit-in-horizontal {
+    0% {
+      -webkit-transform: translateZ(-800px) rotateX(90deg);
+              transform: translateZ(-800px) rotateX(90deg);
+      opacity: 0;
+    }
+    54% {
+      -webkit-transform: translateZ(-160px) rotateX(87deg);
+              transform: translateZ(-160px) rotateX(87deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateZ(0) rotateX(0);
+              transform: translateZ(0) rotateX(0);
+    }
+}
+
 @keyframes slit-in-vertical {
     0% {
         -webkit-transform: translateZ(-800px) rotateY(90deg);
@@ -266,6 +287,16 @@ li:hover {
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 20px !important;
     }
+
+    section.contact {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    nav .name {
+        font-size: large;
+        text-shadow: .5px .5px .5px #000;
+    }
 }
 
 @media (width <= 768px) {
@@ -279,18 +310,59 @@ li:hover {
         width: 150px;
     }
 
-    header h1 {
+    nav .name,
+    button {
+        font-size: small !important;
+    }
+
+    h1, h2 {
         font-size: larger !important;
         margin-bottom: 8px !important;
     }
 }
 
 @media (width <= 675px) {
-    header figure img {
+    header figure img,
+    nav .name {
         display: none;
     }
 
     .cards {
         grid-template-columns: 2fr !important;
+    }
+
+    header,
+    section,
+    .lang-specs,
+    .cards,
+    .left {
+        padding: 15px !important;
+    }
+
+    .form-group {
+        transition: all .5s ease;
+    }
+
+    .form-group:hover {
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    }
+
+    .mx-8 {
+        margin: 10px !important
+    }
+
+    .attribute {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    ul li a span {
+        font-size: 24px;
+    }
+
+    .h-8.w-8 {
+        width: 20px;
+        height: 20px;
     }
 }

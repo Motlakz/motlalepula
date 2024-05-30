@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/b8612dc57b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
     <link href="./src/output.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body class="bg-indigo-100 dark:bg-gray-900">
     <nav class="navbar bg-gray-300 dark:bg-gray-600 flex justify-between items-center">
@@ -27,12 +28,11 @@
         </article>
         <ul class="flex gap-4 items-center p-4 text-4xl">
             <li><a href=""><span class="icon dark:text-blue-400 text-blue-600"><i class="fa-brands fa-linkedin"></i></span></a></li>
-            <li><a href=""><span class="icon dark:text-purple-500 text-purple-600"><i class="fa-brands fa-github"></i></span></a></li>
+            <li><a href=""><span class="icon dark:text-purple-300 text-purple-600"><i class="fa-brands fa-github"></i></span></a></li>
             <li><a href=""><span class="icon text-blue-400 dark:text-blue-300"><i class="fa-brands fa-square-twitter"></i></span></a></li>
-            <li><a href=""><span class="icon"><img src="./icon.svg" class="h-8 w-8 rounded bg-white dark:bg-slate-300" alt="frontendmentor svg"></span></a></li>
         </ul>
     </nav>
-    <header class="flex justify-between items-center">
+    <header class="flex justify-between items-center p-10">
         <article class="text-purple-900 dark:text-cyan-500 p-4">
             <h1 class="font-bold text-4xl mb-6">Welcome to my website! I'm <span class="name border-b-4 border-b-teal-400 dark:border-b-purple-400">Motlalepula Sello</span></h1>
             <p class="mb-6">Based in South Africa, I'm a front-end developer with a flair for creativity, a passion for learning new tools, technologies, and languages, and a love for building user-friendly websites, web apps, and web components that people enjoy interacting with.</p>
@@ -89,32 +89,39 @@
         <div class="cards grid grid-cols-3 gap-6 p-8">
             <div class="card border border-gray-400 dark:border-gray-300 slit-in-vr">
                 <figure>
-                    <img src="" class="rounded-lg" alt="first">
-                    <figcaption class="dark:bg-slate-700 dark:text-white">Some Figcaption for inspiration</figcaption>
+                    <a href="https://repay-smart-ee41a.web.app/">
+                        <img src="./assets/RepaySmartFace.png" class="rounded-lg object-cover" alt="repay smart face">
+                    </a>
+                    
+                    <figcaption class="dark:bg-slate-700 dark:text-white">Loan Repayments Tracker</figcaption>
                 </figure>
                 <article class="p-8 dark:bg-slate-600 dark:text-white">
-                    <h2>This project</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, inventore.</p>
+                    <h2>Repay Smart App</h2>
+                    <p>Loan Repayments tracker that simplifies tracking your loan repayments seamlessly.</p>
                 </article>
             </div>
             <div class="card border border-gray-400 dark:border-gray-300 slit-in-vr">
                 <figure>
-                    <img src="" class="rounded-lg" alt="second">
-                    <figcaption class="dark:bg-slate-700 dark:text-white">Some Figcaption for inspiration</figcaption>
+                    <a href="https://hero-gem.firebaseapp.com/">
+                        <img src="./assets/herogem1.png" class="rounded-lg object-cover" alt="hero gem app">
+                    </a>
+                    <figcaption class="dark:bg-slate-700 dark:text-white">Hero Text Generator</figcaption>
                 </figure>
                 <article class="p-8 dark:bg-slate-600 dark:text-white">
-                    <h2>That Project</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <h2>HeroGem App</h2>
+                    <p>An AI-powered Hero Text Generator that reduces the headache of having to come up with a unique set of ideas for your hero section.</p>
                 </article>
             </div>
             <div class="card border border-gray-400 dark:border-gray-300 slit-in-vr">
                 <figure>
-                    <img src="" class="rounded-lg" alt="third">
-                    <figcaption class="dark:bg-slate-700 dark:text-white">Some Figcaption for inspiration</figcaption>
+                    <a href="https://phasesapp.web.app">
+                        <img src="./assets/phases.png" class="rounded-lg object-cover" alt="phases app">
+                    </a>
+                    <figcaption class="dark:bg-slate-700 dark:text-white">App Phase Tracker</figcaption>
                 </figure>
                 <article class="p-8 dark:bg-slate-600 dark:text-white">
-                    <h2>A Project</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, dolores.</p>
+                    <h2>Phases</h2>
+                    <p>An effective and organized app to track and manage your apps' phases, ideas, and project directory</p>
                 </article>
             </div>
             <div class="card border border-gray-400 dark:border-gray-300 slit-in-vr">
@@ -149,7 +156,7 @@
             </div>
         </div>
     </section>
-    <section class="contact flex items-stretch p-16">
+    <section class="contact flex items-stretch p-8">
         <div class="left flex-1 p-10">
             <article class="dark:text-white">
                 <h2 class="font-bold text-4xl text-slate-800 dark:text-white mb-4">Talk to me</h2>
@@ -194,7 +201,7 @@
         </div>
         <div class="right flex-1">
             <div class="relative sm:max-w-xl sm:mx-auto">
-                <div class="relative p-8 dark:bg-slate-600 bg-white mx-8 md:mx-0 shadow rounded-3xl">
+                <div class="form-group relative p-8 dark:bg-slate-600 bg-white mx-8 md:mx-0 shadow rounded-3xl">
                     <div class="max-w-md mx-auto">
                         <header class="mb-6">
                             <h2 class="text-2xl font-semibold dark:text-white text-gray-700">Contact Me</h2>
@@ -263,13 +270,12 @@
                 </figure>
             </div>
 
-            <p class="attribute text-purple-600 dark:text-cyan-400">&copy; 2024 ✯ Motlalepula Sello's Portfolio ✯</p>
+            <p class="attribute text-purple-600 dark:text-cyan-400"><span>&copy; 2024</span> ✯ Motlalepula Sello ✯</p>
                           
             <ul class="flex gap-4 items-center p-4 text-4xl">
                 <li><a href=""><span class="icon dark:text-blue-400 text-blue-600"><i class="fa-brands fa-linkedin"></i></span></a></li>
-                <li><a href=""><span class="icon dark:text-purple-500 text-purple-600"><i class="fa-brands fa-github"></i></span></a></li>
+                <li><a href=""><span class="icon dark:text-purple-300 text-purple-600"><i class="fa-brands fa-github"></i></span></a></li>
                 <li><a href=""><span class="icon text-blue-400 dark:text-blue-300"><i class="fa-brands fa-square-twitter"></i></span></a></li>
-                <li><a href=""><span class="icon"><img src="./icon.svg" class="h-8 w-8 rounded bg-white dark:bg-slate-300" alt="frontendmentor svg"></span></a></li>
             </ul>
         </nav>
     </footer>

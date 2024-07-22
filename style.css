@@ -78,7 +78,7 @@ body.dark {
 }
 
 nav .name {
-    text-shadow: 3px 3px 3px var(--main-black);
+    text-shadow: 1.2px 3px 3px var(--main-black);
 }
 
 .dark nav .name {
@@ -87,7 +87,8 @@ nav .name {
 
 nav .name,
 .dark nav .name {
-    letter-spacing: 5px;
+    font-size: 24px;
+    letter-spacing: 3px;
 }
 
 header article {

@@ -176,18 +176,18 @@ li:hover {
 
 .floating-icon:nth-child(1) {
     right: 10%;
-    top: 20%;
+    top: 2%;
     animation-delay: 0s;
 }
 
 .floating-icon:nth-child(2) {
-    right: 2%;
+    right: -2%;
     top: 50%;
     animation-delay: 0.5s;
 }
 
 .floating-icon:nth-child(3) {
-    right: 5%;
+    right: 3%;
     bottom: 20%;
     animation-delay: 1s;
 }

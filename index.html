@@ -33,40 +33,51 @@
         </div>
     </nav>
 
-    <header class="container mx-auto px-4 py-12 mt-10">
-        <div class="neumorphism rounded-3xl p-8 overflow-hidden">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-                <article class="glassmorphism p-8 rounded-2xl shadow-2xl dark:text-gray-200 transform hover:scale-105 transition-all duration-300 order-2 md:order-1 z-10">
-                    <h1 class="font-bold text-3xl sm:text-4xl lg:text-5xl mb-6 text-purple-900 dark:text-cyan-500 transition-colors duration-300">
-                        Welcome to my portfolio! I'm <span class="border-b-4 border-b-teal-400 dark:border-b-purple-400 pb-1">Motlalepula Sello</span>
-                    </h1>
-                    <p class="mb-8 text-gray-700 dark:text-white transition-colors duration-300 text-lg leading-relaxed">
-                        <i class="fas fa-map-marker-alt text-purple-600 dark:text-cyan-500 mr-2"></i>Based in South Africa, I'm a front-end developer with:
-                    </p>
-                    <ul class="mb-8 text-gray-700 dark:text-white transition-colors duration-300 text-lg leading-relaxed">
-                        <li><i class="fas fa-paint-brush text-purple-600 dark:text-cyan-500 mr-2"></i>A flair for creativity</li>
-                        <li><i class="fas fa-graduation-cap text-purple-600 dark:text-cyan-500 mr-2"></i>A passion for learning new tools, technologies, and languages</li>
-                        <li><i class="fas fa-heart text-purple-600 dark:text-cyan-500 mr-2"></i>A love for building user-friendly websites, web apps, and web components</li>
-                    </ul>
-                    <button class="px-8 py-4 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition-all duration-300 shadow-lg focus:outline-none focus:ring-2 focus:ring-purple-500 dark:focus:ring-cyan-500 focus:ring-opacity-50 transform hover:-translate-y-1">
-                        <a href="#section" class="text-white hover:text-gray-100 text-lg font-semibold">
-                            <i class="fas fa-rocket mr-2"></i>Explore My Work
-                        </a>
-                    </button>
-                </article>
-                <figure class="max-w-md mx-auto md:w-full md:max-w-none order-1 md:order-2 relative">
-                    <div class="relative rounded-full overflow-hidden border-8 border-purple-600 dark:border-cyan-500 shadow-2xl transition-colors duration-300 transform float-animation">
-                        <img src="./assets/Motlakz.jpg" class="w-full h-full object-cover" alt="Motlalepula Sello">
-                        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-purple-900 dark:to-cyan-900 opacity-30 transition-opacity duration-300 hover:opacity-0"></div>
-                    </div>
-                </figure>
+    <header class="w-full px-4 py-12 mt-10">
+        <div class="neumorphism rounded-3xl p-8 overflow-hidden flex items-center">
+            <article class="glassmorphism p-8 rounded-2xl shadow-2xl dark:text-gray-300 order-2 md:order-1 z-10 max-w-7xl">
+                <div class="flex items-center justify-between">
+                    <article>
+                        <h1 class="font-bold flex flex-col text-3xl sm:text-4xl lg:text-5xl mb-6 text-purple-900 dark:text-cyan-500 transition-colors duration-300">
+                            Welcome to my portfolio! 
+                            <span>I'm <span class="border-b-4 border-b-teal-400 dark:border-b-purple-400 pb-1">Motlalepula Sello</span></span>
+                        </h1>
+                        <p class="mb-8 text-gray-700 dark:text-white transition-colors duration-300 text-lg leading-relaxed">
+                            <i class="fas fa-map-marker-alt text-purple-600 dark:text-cyan-500 mr-2"></i>Based in South Africa, I'm a front-end developer with:
+                        </p>
+                        <ul class="mb-8 text-gray-700 dark:text-white transition-colors duration-300 text-lg leading-relaxed">
+                            <li><i class="fas fa-paint-brush text-purple-600 dark:text-cyan-500 mr-2"></i>A flair for creativity</li>
+                            <li><i class="fas fa-graduation-cap text-purple-600 dark:text-cyan-500 mr-2"></i>A passion for learning new tools, technologies, and languages</li>
+                            <li><i class="fas fa-heart text-purple-600 dark:text-cyan-500 mr-2"></i>A love for building user-friendly websites, web apps, and web components</li>
+                        </ul>
+                    </article>
+                    
+                    <figure class="hidden md:block max-w-md mx-auto md:w-full md:max-w-none order-1 md:order-2 relative">
+                        <div class="relative rounded-full overflow-hidden border-8 border-purple-600 dark:border-cyan-500 shadow-2xl transition-colors duration-300 transform float-animation">
+                            <img src="./assets/Motlakz.jpg" class="w-full h-full object-cover" alt="Motlalepula Sello">
+                            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-purple-900 dark:to-cyan-900 opacity-30 transition-opacity duration-300 hover:opacity-0"></div>
+                        </div>
+                    </figure>
+                </div>
+                <button class="px-8 py-4 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition-all duration-300 shadow-lg focus:outline-none focus:ring-2 focus:ring-purple-500 dark:focus:ring-cyan-500 focus:ring-opacity-50 transform hover:-translate-y-1">
+                    <a href="#section" class="text-white hover:text-gray-100 text-lg font-semibold">
+                        <i class="fas fa-rocket mr-2"></i>Explore My Work
+                    </a>
+                </button>
+            </article>
+            <div class="icons">
+                <i class="fab fa-html5 text-purple-600 dark:text-cyan-500 floating-icon"></i>
+                <i class="fab fa-css3-alt text-purple-600 dark:text-cyan-500 floating-icon"></i>
+                <i class="fab fa-js-square text-purple-600 dark:text-cyan-500 floating-icon"></i>
+                <i class="fab fa-react text-purple-600 dark:text-cyan-500 floating-icon"></i>
+                <i class="fab fa-git-alt text-purple-600 dark:text-cyan-500 floating-icon"></i>
             </div>
         </div>
     </header>
 
     <section id="section" class="container mx-auto mt-20 fade-in">
         <h2 class="font-extrabold text-5xl text-center text-purple-800 dark:text-cyan-600 mb-12 transition-colors duration-300">My Tech Stack</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 p-8">
+        <div class="langs gap-8 p-8">
             <div class="glassmorphism p-6 rounded-xl text-center transform hover:scale-105 transition-all duration-300">
                 <h2 class="font-bold text-3xl text-orange-500 mb-2">HTML <i class="fab fa-html5"></i></h2>
                 <p class="font-semibold text-blue-600 dark:text-blue-400">3 Years</p>
@@ -165,10 +176,10 @@
     </section>
 
     <section id="contact" class="container mx-auto mt-20 mb-20 p-8 fade-in">
-        <div class="flex sm:flex-row justify-center items-stretch">
+        <div class="contact flex justify-center items-stretch">
             <div class="md:w-1/2 p-10 glassmorphism rounded-t-xl md:rounded-l-xl md:rounded-tr-none">
                 <h2 class="font-bold text-4xl text-purple-800 dark:text-cyan-500 mb-6 transition-colors duration-300">Let's Connect</h2>
-                <p class="text-xl mb-8 text-gray-700 dark:text-white transition-colors duration-300">I'd love to hear about your projects and how I can contribute to their success. Feel free to reach out through any of the platforms below.</p>
+                <p class="text-xl mb-8 text-gray-700 dark:text-white transition-colors duration-300">I'd love to hear about your projects and how I can contribute to their success. Feel free to reach out through any of the platforms here.</p>
                 <div class="flex flex-col items-center justify-center space-y-4">
                     <div class="flex items-center justify-center space-x-4">
                         <div class="text-4xl text-orange-500"><i class="fab fa-html5 animate-bounce"></i></div>

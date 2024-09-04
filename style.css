@@ -113,6 +113,10 @@ li:hover {
     transform: scale(0.9);
 }
 
+.langs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
 
 .card:hover {
     box-shadow: rgb(156, 99, 196) 5px 5px, var(--deep-purple) 10px 10px;
@@ -152,20 +156,49 @@ li:hover {
 .float-animation {
     animation: float 3s ease-in-out infinite;
 }
+
+.floating-icon {
+    position: absolute;
+    font-size: 6rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+.floating-icon:nth-child(1) {
+    right: 10%;
+    top: 20%;
+    animation-delay: 0s;
+}
+
+.floating-icon:nth-child(2) {
+    right: 20%;
+    top: 50%;
+    animation-delay: 0.5s;
+}
+
+.floating-icon:nth-child(3) {
+    right: 10%;
+    bottom: 20%;
+    animation-delay: 1s;
+}
+
+.floating-icon:nth-child(4) {
+    right: 5%;
+    top: 30%;
+    animation-delay: 1s;
+}
+
+.floating-icon:nth-child(5) {
+    right: 25%;
+    bottom: 10%;
+    animation-delay: 1s;
+}
 .neumorphism {
     box-shadow: 5px 5px 15px var(--light-purple), 5px 5px 15px var(--main-white);
 }
+
 .dark .neumorphism {
     background: linear-gradient(145deg, #070707, #070707);
     box-shadow: 5px 5px 15px #1c1c1c, -5px -5px 15px #383838;
-}
-.glassmorphism {
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-}
-.dark .glassmorphism {
-    background: rgba(0, 0, 0, 0.25);
 }
 
 @keyframes float {
@@ -181,5 +214,22 @@ li:hover {
 
     to {
       transform: rotate(360deg);
+    }
+}
+
+@media (width <= 1024px) {
+    .langs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (width <= 860px) {
+    .contact {
+        flex-direction: column;
+    }
+}
+
+@media (width <= 600px) {
+    .langs {
+        grid-template-columns: 1fr;
     }
 }

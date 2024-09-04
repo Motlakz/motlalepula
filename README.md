@@ -18,8 +18,8 @@ Feel free to navigate through my projects and get a glimpse of what I've been wo
 Here are some of the technologies and tools I specialize in:
 
 - HTML5, CSS3, JavaScript
-- React.js, Vue.js
-- Tailwind CSS, Bootstrap
+- React.js, Next.js
+- Tailwind CSS, Shadcn UI
 - Git, GitHub
 - ... and more!
 

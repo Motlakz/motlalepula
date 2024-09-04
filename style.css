@@ -170,7 +170,7 @@ li:hover {
 
 .floating-icon {
     position: absolute;
-    font-size: 6rem;
+    font-size: 4rem;
     animation: float 3s ease-in-out infinite;
 }
 
@@ -181,26 +181,26 @@ li:hover {
 }
 
 .floating-icon:nth-child(2) {
-    right: 20%;
+    right: 2%;
     top: 50%;
     animation-delay: 0.5s;
 }
 
 .floating-icon:nth-child(3) {
-    right: 10%;
+    right: 5%;
     bottom: 20%;
     animation-delay: 1s;
 }
 
 .floating-icon:nth-child(4) {
-    right: 5%;
+    right: 3%;
     top: 30%;
     animation-delay: 1s;
 }
 
 .floating-icon:nth-child(5) {
-    right: 25%;
-    bottom: 10%;
+    right: 0%;
+    bottom: 0%;
     animation-delay: 1s;
 }
 .neumorphism {

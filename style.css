@@ -114,11 +114,11 @@ li:hover {
     transform: scale(0.9);
 }
 
-.dark button {
+.dark .btn {
     background-color: var(--dark-cyan);
 }
 
-.dark button:hover {
+.dark .btn:hover {
     background-color: var(--cyan);
     color: #383838;
     text-shadow: .5px .5px .5px var(--main-white);
@@ -235,13 +235,18 @@ li:hover {
 }
 @media (width <= 860px) {
     nav,
-    .col,
-    .contact {
+    .col {
         flex-direction: column;
     }
 
     .mode {
         font-size: 8%;
+    }
+}
+
+@media (width <= 768px) {
+    .contact {
+        flex-direction: column;
     }
 }
 

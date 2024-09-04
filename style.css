@@ -77,6 +77,92 @@ body.dark {
     --light-purple: rgb(243 232 255);
     --lightgray: #d7d7d7;
 }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar-logo img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.navbar-logo h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #6b21a8;
+    transition: color 0.3s;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+.navbar-links a {
+    color: #2563eb;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: #1e40af;
+}
+
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 0.25rem;
+    cursor: pointer;
+}
+
+.navbar-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #6b21a8;
+    transition: 0.3s;
+}
+
+.dark .navbar {
+    background: rgba(17, 25, 40, 0.75);
+    border-color: rgba(255, 255, 255, 0.125);
+}
+
+.dark .navbar-logo h1 {
+    color: #22d3ee;
+}
+
+.dark .navbar-toggle span {
+    background-color: #22d3ee;
+}
+
+.dark .navbar-menu {
+    background: rgba(17, 25, 40, 0.9);
+}
 
 nav .name {
     text-shadow: 1.2px 3px 3px var(--main-black);
@@ -223,8 +309,14 @@ li:hover {
     }
 }
 @media (width <= 860px) {
+    nav,
+    .col,
     .contact {
         flex-direction: column;
+    }
+
+    .mode {
+        font-size: 8%;
     }
 }
 

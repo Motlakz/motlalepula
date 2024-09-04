@@ -10,22 +10,20 @@
     <link rel="stylesheet" href="./style.css">
     <link href="./src/output.css" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <style>
-        
-    </style>
 </head>
 <body class="bg-indigo-100 min-h-screen">
-    <nav class="glassmorphism sticky top-0 z-50 flex justify-between items-center p-4 shadow-lg">
+    <nav class="glassmorphism sticky top-0 z-50 flex justify-between gap-4 items-center p-4 shadow-lg">
         <div class="flex items-center space-x-4">
-            <img src="./assets/portfolio-logo-dark.png" class="logo w-12 h-12 rounded-full object-cover" alt="portfolio logo">
-            <h1 class="text-2xl font-extrabold text-purple-700 dark:text-cyan-400 transition-colors duration-300">MOTLALEPULA SELLO</h1>
+            <img src="./assets/portfolio-logo-dark.png" class="logo h-6 w-6 sm:w-12 sm:h-12 rounded-full object-cover" alt="portfolio logo">
+            <h1 class="hidden sm:block text-2xl font-extrabold text-purple-700 dark:text-cyan-400 transition-colors duration-300">MOTLALEPULA SELLO</h1>
+            <h1 class="sm:hidden font-extrabold text-purple-700 dark:text-cyan-400 transition-colors duration-300">MS</h1>
         </div>
-        <div class="flex items-center space-x-6">
-            <div class="mode">
-                <div class="moon">
-                </div>
+        <div class="mode">
+            <div class="moon">
             </div>
-            <ul class="flex gap-4 items-center text-3xl">
+        </div>
+        <div class="col flex items-center space-x-6">
+            <ul class="flex gap-4 items-center sm:text-3xl">
                 <li><a href="https://www.linkedin.com/in/motlalepula-sello-37956813a/" class="text-blue-600 hover:text-blue-800 transition-colors duration-300"><i class="fab fa-linkedin"></i></a></li>
                 <li><a href="https://www.github.com/Motlakz" class="text-purple-600 hover:text-purple-800 transition-colors duration-300"><i class="fab fa-github"></i></a></li>
                 <li><a href="https://x.com/MotlalepulaSel6" class="text-blue-400 hover:text-blue-600 transition-colors duration-300"><i class="fab fa-twitter"></i></a></li>
@@ -33,19 +31,19 @@
         </div>
     </nav>
 
-    <header class="w-full px-4 py-12 mt-10">
-        <div class="neumorphism rounded-3xl p-8 overflow-hidden flex items-center">
+    <header class="w-full sm:px-4 sm:py-12 p-4 mt-10">
+        <div class="neumorphism rounded-3xl sm:p-8 overflow-hidden flex items-center">
             <article class="glassmorphism p-8 rounded-2xl shadow-2xl dark:text-gray-300 order-2 md:order-1 z-10 max-w-7xl">
                 <div class="flex items-center justify-between">
                     <article>
-                        <h1 class="font-bold flex flex-col text-3xl sm:text-4xl lg:text-5xl mb-6 text-purple-900 dark:text-cyan-500 transition-colors duration-300">
+                        <h1 class="font-bold flex flex-col text-2xl sm:text-4xl lg:text-5xl mb-6 text-purple-900 dark:text-cyan-500 transition-colors duration-300">
                             Welcome to my portfolio! 
                             <span>I'm <span class="border-b-4 border-b-teal-400 dark:border-b-purple-400 pb-1">Motlalepula Sello</span></span>
                         </h1>
-                        <p class="mb-8 text-gray-700 dark:text-white transition-colors duration-300 text-lg leading-relaxed">
+                        <p class="mb-8 text-gray-800 dark:text-white transition-colors duration-300 text-lg leading-relaxed">
                             <i class="fas fa-map-marker-alt text-purple-600 dark:text-cyan-500 mr-2"></i>Based in South Africa, I'm a front-end developer with:
                         </p>
-                        <ul class="mb-8 text-gray-700 dark:text-white transition-colors duration-300 text-lg leading-relaxed">
+                        <ul class="mb-8 text-gray-800 dark:text-white transition-colors duration-300 sm:text-lg leading-relaxed">
                             <li><i class="fas fa-paint-brush text-purple-600 dark:text-cyan-500 mr-2"></i>A flair for creativity</li>
                             <li><i class="fas fa-graduation-cap text-purple-600 dark:text-cyan-500 mr-2"></i>A passion for learning new tools, technologies, and languages</li>
                             <li><i class="fas fa-heart text-purple-600 dark:text-cyan-500 mr-2"></i>A love for building user-friendly websites, web apps, and web components</li>
@@ -60,7 +58,7 @@
                     </figure>
                 </div>
                 <button class="px-8 py-4 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition-all duration-300 shadow-lg focus:outline-none focus:ring-2 focus:ring-purple-500 dark:focus:ring-cyan-500 focus:ring-opacity-50 transform hover:-translate-y-1">
-                    <a href="#section" class="text-white hover:text-gray-100 text-lg font-semibold">
+                    <a href="#projects" class="text-white hover:text-gray-100 sm:text-lg font-semibold">
                         <i class="fas fa-rocket mr-2"></i>Explore My Work
                     </a>
                 </button>
@@ -76,48 +74,48 @@
     </header>
 
     <section id="section" class="container mx-auto mt-20 fade-in">
-        <h2 class="font-extrabold text-5xl text-center text-purple-800 dark:text-cyan-600 mb-12 transition-colors duration-300">My Tech Stack</h2>
+        <h2 class="font-extrabold text-2xl sm:text-4xl lg:text-5xl text-center text-purple-800 dark:text-cyan-600 mb-12 transition-colors duration-300">My Tech Stack</h2>
         <div class="langs gap-8 p-8">
             <div class="glassmorphism p-6 rounded-xl text-center transform hover:scale-105 transition-all duration-300">
-                <h2 class="font-bold text-3xl text-orange-500 mb-2">HTML <i class="fab fa-html5"></i></h2>
+                <h2 class="font-bold text-lg sm:text-3xl text-orange-500 mb-2">HTML <i class="fab fa-html5"></i></h2>
                 <p class="font-semibold text-blue-600 dark:text-blue-400">3 Years</p>
             </div>
             <div class="glassmorphism p-6 rounded-xl text-center transform hover:scale-105 transition-all duration-300">
-                <h2 class="font-bold text-3xl text-blue-500 mb-2">CSS <i class="fab fa-css3-alt"></i></h2>
+                <h2 class="font-bold text-lg sm:text-3xl text-blue-500 mb-2">CSS <i class="fab fa-css3-alt"></i></h2>
                 <p class="font-semibold text-blue-600 dark:text-blue-400">3 Years</p>
             </div>
             <div class="glassmorphism p-6 rounded-xl text-center transform hover:scale-105 transition-all duration-300">
-                <h2 class="font-bold text-3xl text-pink-500 mb-2">SCSS <i class="fab fa-sass"></i></h2>
+                <h2 class="font-bold text-lg sm:text-3xl text-pink-500 mb-2">SCSS <i class="fab fa-sass"></i></h2>
                 <p class="font-semibold text-blue-600 dark:text-blue-400">1 Year</p>
             </div>
             <div class="glassmorphism p-6 rounded-xl text-center transform hover:scale-105 transition-all duration-300">
-                <h2 class="font-bold text-3xl text-teal-400 mb-2">TailwindCSS <i class="bi bi-braces-asterisk"></i></h2>
+                <h2 class="font-bold text-lg sm:text-3xl text-teal-400 mb-2">TailwindCSS <i class="bi bi-braces-asterisk"></i></h2>
                 <p class="font-semibold text-blue-600 dark:text-blue-400">1 Year</p>
             </div>
             <div class="glassmorphism p-6 rounded-xl text-center transform hover:scale-105 transition-all duration-300">
-                <h2 class="font-bold text-3xl text-yellow-500 mb-2">JavaScript <i class="fab fa-js"></i></h2>
+                <h2 class="font-bold text-lg sm:text-3xl text-yellow-500 mb-2">JavaScript <i class="fab fa-js"></i></h2>
                 <p class="font-semibold text-blue-600 dark:text-blue-400">3 Years</p>
             </div>
             <div class="glassmorphism p-6 rounded-xl text-center transform hover:scale-105 transition-all duration-300">
-                <h2 class="font-bold text-3xl text-red-600 mb-2 flex items-center justify-center">Ruby on Rails
+                <h2 class="font-bold text-lg sm:text-3xl text-red-600 mb-2 flex items-center justify-center">Ruby on Rails
                     <img src="./assets/ruby-icon.png" class="h-8 w-8 ml-2" alt="Ruby icon">
                 </h2>
                 <p class="font-semibold text-blue-600 dark:text-blue-400">1 Year</p>
             </div>
             <div class="glassmorphism p-6 rounded-xl text-center transform hover:scale-105 transition-all duration-300">
-                <h2 class="font-bold text-3xl text-cyan-500 mb-2">React <i class="fab fa-react"></i></h2>
+                <h2 class="font-bold text-lg sm:text-3xl text-cyan-500 mb-2">React <i class="fab fa-react"></i></h2>
                 <p class="font-semibold text-blue-600 dark:text-blue-400">1 Year</p>
             </div>
             <div class="glassmorphism p-6 rounded-xl text-center transform hover:scale-105 transition-all duration-300">
-                <h2 class="font-bold text-3xl text-purple-500 mb-2">Front End Development <i class="fas fa-laptop-code"></i></h2>
+                <h2 class="font-bold text-lg sm:text-3xl text-purple-500 mb-2">Front End Development <i class="fas fa-laptop-code"></i></h2>
                 <p class="font-semibold text-blue-600 dark:text-blue-400">3 Years</p>
             </div>
         </div>
     </section>
 
-    <section class="container mx-auto mt-20 fade-in">
+    <section id="projects" class="container mx-auto mt-20 fade-in">
         <div class="flex items-center justify-between py-10 px-8">
-            <h2 class="font-extrabold text-5xl text-purple-800 dark:text-cyan-500 transition-colors duration-300">Projects</h2>
+            <h2 class="font-extrabold text-2xl sm:text-4xl lg:text-5xl text-purple-800 dark:text-cyan-500 transition-colors duration-300">Projects</h2>
             <button class="px-6 py-3 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition-colors duration-300 shadow-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50">
                 <a href="#contact" class="text-white hover:text-gray-100">Contact Me</a>
             </button>
@@ -128,7 +126,7 @@
                 <img src="./assets/admin dashboard.png" class="w-full h-48 object-cover" alt="SwiftPatient Demo">
                 <article class="p-6">
                     <h3 class="font-bold text-2xl mb-2 text-purple-700 dark:text-cyan-400">SwiftPatient</h3>
-                    <p class="text-gray-700 dark:text-white">Intuitive healthcare management system that doubles as an online booking system to skip the waiting line.</p>
+                    <p class="text-gray-800 dark:text-white">Intuitive healthcare management system that doubles as an online booking system to skip the waiting line.</p>
                     <a href="https://swiftpatientmed.vercel.app/" class="mt-4 inline-block text-blue-600 hover:text-blue-800 transition-colors duration-300">View Project →</a>
                 </article>
             </div>
@@ -136,7 +134,7 @@
                 <img src="./assets/comments.png" class="w-full h-48 object-cover" alt="Live Docs Demo">
                 <article class="p-6">
                     <h3 class="font-bold text-2xl mb-2 text-purple-700 dark:text-cyan-400">LiveDocs</h3>
-                    <p class="text-gray-700 dark:text-white">Real-time collaborative document management app with interactive features.</p>
+                    <p class="text-gray-800 dark:text-white">Real-time collaborative document management app with interactive features.</p>
                     <a href="https://live-docs-psi-three.vercel.app/" class="mt-4 inline-block text-blue-600 hover:text-blue-800 transition-colors duration-300">View Project →</a>
                 </article>
             </div>
@@ -144,7 +142,7 @@
                 <img src="./assets/fasting-dash.png" class="w-full h-48 object-cover" alt="BellyClock Demo">
                 <article class="p-6">
                     <h3 class="font-bold text-2xl mb-2 text-purple-700 dark:text-cyan-400">Belly Clock</h3>
-                    <p class="text-gray-700 dark:text-white">The best intermittent fasting calculator with an AI companion to guide you.</p>
+                    <p class="text-gray-800 dark:text-white">The best intermittent fasting calculator with an AI companion to guide you.</p>
                     <a href="https://fastingcalculatorai.com/" class="mt-4 inline-block text-blue-600 hover:text-blue-800 transition-colors duration-300">View Project →</a>
                 </article>
             </div>
@@ -152,7 +150,7 @@
                 <img src="/assets/first-screen.png" class="w-full h-48 object-cover" alt="Love Test Page">
                 <article class="p-6">
                     <h3 class="font-bold text-2xl mb-2 text-purple-700 dark:text-cyan-400">Love Test AI</h3>
-                    <p class="text-gray-700 dark:text-white">A fun-packed love calculator application with a diverse set of smart calculators.</p>
+                    <p class="text-gray-800 dark:text-white">A fun-packed love calculator application with a diverse set of smart calculators.</p>
                     <a href="https://lovetestai.com" class="mt-4 inline-block text-blue-600 hover:text-blue-800 transition-colors duration-300">View Project →</a>
                 </article>
             </div>
@@ -160,7 +158,7 @@
                 <img src="./assets/entries.png" class="w-full h-48 object-cover" alt="SpeakDiary Demo">
                 <article class="p-6">
                     <h3 class="font-bold text-2xl mb-2 text-purple-700 dark:text-cyan-400">SpeakDiary</h3>
-                    <p class="text-gray-700 dark:text-white">Smart journaling app that revolutionizes how you share your thoughts, speak your truths, and embrace your creativity.</p>
+                    <p class="text-gray-800 dark:text-white">Smart journaling app that revolutionizes how you share your thoughts, speak your truths, and embrace your creativity.</p>
                     <a href="https://speakdiary.com" class="mt-4 inline-block text-blue-600 hover:text-blue-800 transition-colors duration-300">View Project →</a>
                 </article>
             </div>
@@ -168,7 +166,7 @@
                 <img src="./assets/phases.png" class="w-full h-48 object-cover" alt="Phases App">
                 <article class="p-6">
                     <h3 class="font-bold text-2xl mb-2 text-purple-700 dark:text-cyan-400">Phases</h3>
-                    <p class="text-gray-700 dark:text-white">An effective and organized app to track and manage your apps' phases, ideas, and project directory.</p>
+                    <p class="text-gray-800 dark:text-white">An effective and organized app to track and manage your apps' phases, ideas, and project directory.</p>
                     <a href="https://phasesapp.web.app" class="mt-4 inline-block text-blue-600 hover:text-blue-800 transition-colors duration-300">View Project →</a>
                 </article>
             </div>
@@ -179,7 +177,7 @@
         <div class="contact flex justify-center items-stretch">
             <div class="md:w-1/2 p-10 glassmorphism rounded-t-xl md:rounded-l-xl md:rounded-tr-none">
                 <h2 class="font-bold text-4xl text-purple-800 dark:text-cyan-500 mb-6 transition-colors duration-300">Let's Connect</h2>
-                <p class="text-xl mb-8 text-gray-700 dark:text-white transition-colors duration-300">I'd love to hear about your projects and how I can contribute to their success. Feel free to reach out through any of the platforms here.</p>
+                <p class="text-xl mb-8 text-gray-800 dark:text-white transition-colors duration-300">I'd love to hear about your projects and how I can contribute to their success. Feel free to reach out through any of the platforms here.</p>
                 <div class="flex flex-col items-center justify-center space-y-4">
                     <div class="flex items-center justify-center space-x-4">
                         <div class="text-4xl text-orange-500"><i class="fab fa-html5 animate-bounce"></i></div>

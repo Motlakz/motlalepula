@@ -79,6 +79,14 @@ body.dark {
     --lightgray: #d7d7d7;
 }
 
+.highlight {
+    text-shadow: 1px 1px 1px #000;
+}
+
+.highlight-mini {
+    text-shadow: .4px .4px .4px #000;
+}
+
 nav .name {
     text-shadow: 1.2px 3px 3px var(--main-black);
 }
